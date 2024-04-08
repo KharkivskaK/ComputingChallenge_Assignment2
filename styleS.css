@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 10%;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    background-color: #e9ecef;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%; /* Added to ensure footer can be pushed to the bottom */
+    display: flex;
+    flex-direction: column; /* Makes the main content flex item */
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 10%;
+    text-align: center; /* Center header content */
+}
+
+header nav {
+    margin: 0 auto; /* Center nav inside header */
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-flex; /* Change from inline to inline-flex for better alignment */
+    align-items: center; /* Aligns items vertically */
+    justify-content: center; /* Centers the list items horizontally */
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    background-color: #e9ecef;
+    padding: 50px 10%;
+    text-align: center;
+    flex: 1; /* Allows the hero section to grow and push the footer down */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}

@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #dddddd;
+}
+
+/* Content */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+h1 {
+    font-size: 2.5vw;
+}
+
+p {
+    font-size: 1.2vw;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr; /* Stack items vertically on small screens */
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .nav-active .nav-link {
+        display: block;
+        text-align: center;
+    }
+}
+
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content styling to push the footer down */
+main.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Services Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #f0f0f0; /* Light grey background for each service */
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+    }
+}
+
+
+.service-item {
+    background-color: #f0f0f0; /* Light grey background for each service */
+    padding: 20px;
+    text-align: center; /* Ensure text is centered within each service item */
+}
+
+/* Adjust the .features container to center the grid within the content area if necessary */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    justify-content: center; /* This centers the grid items in the container if there's extra space */
+    padding: 20px; /* Match padding with the .content for consistent spacing */
+}
+
+/* General content area adjustments for consistency */
+.content {
+    padding: 20px;
+    text-align: center; /* Ensures text alignment consistency */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This will center-align the child elements, including .features */
+}
+
+/* Responsive adjustments for text to ensure they don't become too small or too large */
+h1, h2, p {
+    margin: 0 auto; /* Centers block-level text elements */
+    max-width: 90%; /* Prevents text from stretching too far on wider screens */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6vw; /* Slightly adjusted for better readability on very small screens */
+    }
+
+    p, h2 {
+        font-size: 4vw;
+    }
+}
+
